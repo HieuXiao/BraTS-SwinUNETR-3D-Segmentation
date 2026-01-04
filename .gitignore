@@ -205,3 +205,27 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# --- PROJECT SPECIFIC IGNORES (Medical AI) ---
+
+# Dữ liệu ảnh MRI (Tuyệt đối không push)
+*.nii
+*.nii.gz
+*.dcm
+data/
+dataset/
+BraTS*/
+
+# Kết quả Training & Logs (Nặng và thay đổi liên tục)
+lightning_logs/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+model_final/
+eval/
+
+# File cấu hình riêng tư (nếu có dùng WandB key)
+wandb/
+secrets.json
